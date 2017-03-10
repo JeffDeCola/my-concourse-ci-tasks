@@ -6,46 +6,33 @@ jobs:
   plan:
   - get: my-concourse-ci-tasks
     trigger: true
-  - task: task-readme-github-pages
-    file: my-concourse-ci-tasks/ci/tasks/task-readme-github-pages.yml
-  - put: my-concourse-ci-tasks
-    params:
-      repository: my-concourse-ci-tasks-updated
-
-- name: job-unit-tests
-  plan:
-  - get: my-concourse-ci-tasks
-    trigger: true
   - put: resource-slack-alert
     params:
       channel: '#jeff-builds'
-      text: "From my-concourse-ci-tasks: STARTED job-unit-tests in concourse ci."
+      text: "From my-concourse-ci-tasks: STARTED job-readme-github-pages in concourse ci."
   - put: resource-repo-status
-    params: { state: "pending", description: "STARTED job-unit-tests in concourse ci.", commit: "my-concourse-ci-tasks" }
-  - task: task-unit-tests
-    file: my-concourse-ci-tasks/ci/tasks/task-unit-tests.yml
+    params: { state: "pending", description: "STARTED job-readme-github-pages in concourse ci.", commit: "my-concourse-ci-tasks" }
+  - task: task-readme-github-pages
+    file: my-concourse-ci-tasks/ci/tasks/task-readme-github-pages.yml
     on_success:
       do:
       - put: my-concourse-ci-tasks
         params:
-          repository: my-concourse-ci-tasks  
+          repository: my-concourse-ci-tasks-updated  
       - put: resource-slack-alert
         params:
           channel: '#jeff-builds'
-          text_file: coverage-results/test_coverage.txt
-          text: |
-            From my-concourse-ci-tasks: PASSED job-unit-tests in concourse ci. 
-            $TEXT_FILE_CONTENT
+          text: "From my-concourse-ci-tasks: PASSED job-readme-github-pages in concourse ci."
       - put: resource-repo-status
-        params: { state: "success", description: "PASSED job-unit-tests in concourse ci", commit: "my-concourse-ci-tasks" }
+        params: { state: "success", description: "PASSED job-readme-github-pages in concourse ci", commit: "my-concourse-ci-tasks" }
     on_failure:
       do:
       - put: resource-slack-alert
         params:
           channel: '#jeff-builds'
-          text: "From my-concourse-ci-tasks: FAILED job-unit-tests in concourse ci."
+          text: "From my-concourse-ci-tasks: FAILED job-readme-github-pages in concourse ci."
       - put: resource-repo-status
-        params: { state: "failure", description: "FAILED job-unit-tests in concourse ci.", commit: "my-concourse-ci-tasks" }
+        params: { state: "failure", description: "FAILED job-readme-github-pages in concourse ci", commit: "my-concourse-ci-tasks" }
 
 resource_types:
 
