@@ -1,8 +1,8 @@
 ---
 layout: default
-title: JeffDeCola/hello-go
-projectname : hello-go
-summary: Uses Concourse to test, build, push (to DockerHub) and deploy a long running "hello-world" Docker Image to Marathon
+title: JeffDeCola/my-concourse-ci-tasks
+projectname : my-concourse-ci-tasks
+summary: A place to keep snippets and examples of Concourse CI tasks
 ---
 
 {% include README.md %}
