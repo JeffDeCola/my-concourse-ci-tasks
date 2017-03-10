@@ -20,9 +20,9 @@ Concourse's main goal is to run tasks.
 
    _Takes your main README.md, edits and copies it to docs/_includes/README.md._
 
-## TESTED USING CONCOURSE
+## GITHUB WEBPAGE UPDATED USING CONCOURSE
 
-A Concourse CI Pipeline will automate unit testing and update the GitHub WebPage.
+A Concourse Pipeline will automatically update the GitHub WebPage.
 
 ![IMAGE - my-concourse-ci-tasks concourse ci piepline - IMAGE](docs/pics/my-concourse-ci-tasks-pipeline.jpg)
 
