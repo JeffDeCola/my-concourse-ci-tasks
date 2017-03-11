@@ -11,34 +11,12 @@ using concourse._
 
 This `pipeline.yml` shall contain:
 
-* JOBS - job-ls-example
-        * RESOURCE - git my-cheat-sheet
-        * TASK - `ls-examples.sh` and `task-ls-example.yml`
+* RESOURCE (git)
+* JOB (job-ls-example)
 
-![IMAGE - concourse ci ls-example - IMAGE](../docs/pics/concourse-ci-ls-example.jpg)
+And the JOB shall contain the task configuration and
+the bash script to perform the task.
 
-### 1. ci/`pipeline.yml`
+NOTE: The pipeline uses the task-ls-example.yml file to config the task.
 
-```bash
-???
-```
-
-### 2. ci/tasks/`task-ls-example.yml`
-
-```bash
-???
-```
-
-### 1. ci/scripts/`ls-example.sh`
-
-```bash
-???
-```
-
-NOTE: If in Windows, must change permissions to execute.
-
-Open git for windows,
-
-```bash
-git update-index --chmod=+x search-and-replace.sh
-```
+![IMAGE - concourse ci ls-example - IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/docs/pics/Concourse-structure.jpg)
