@@ -7,31 +7,30 @@ using concourse._
 
 [GitHub Webpage](https://jeffdecola.github.io/my-concourse-ci-tasks/)
 
+## THE PIPELINE
 
-## 1. ci/`pipeline.yml`
+This `pipeline.yml` shall contain:
 
-The `pipeline.yml` files pipelines jobs (tasks) together and the resources that each job need.
-
-For this pipeline will shall contain:
-
-* JOBS - ls-example
+* JOBS - job-ls-example
         * RESOURCE - git my-cheat-sheet
-        * TASK - `ls-examples.sh`
+        * TASK - `ls-examples.sh` and `task-ls-example.yml`
+
+### 1. ci/`pipeline.yml`
 
 ```bash
 ???
 ```
 
-## 2. ci/tasks/`task-ls-example.yml`
+### 2. ci/tasks/`task-ls-example.yml`
 
 ```bash
 ???
 ```
 
-## 1. ci/scripts/`ls-example.sh`
+### 1. ci/scripts/`ls-example.sh`
 
 ```bash
-#
+???
 ```
 
 NOTE: If in Windows, must change permissions to execute.
