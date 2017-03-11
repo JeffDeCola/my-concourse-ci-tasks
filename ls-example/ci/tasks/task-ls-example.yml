@@ -9,7 +9,7 @@ image_resource:
     tag: 1.7.1
 
 inputs:
-- name:my-concourse-ci-tasks
+- name: my-concourse-ci-tasks
 
 outputs:
 - name: result

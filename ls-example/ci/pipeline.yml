@@ -4,17 +4,16 @@ jobs:
 
 - name: job-ls-example
   plan:
-  - get: my-cheat-sheets
+  - get: my-concourse-ci-tasks
     trigger: true
   - task: task-ls-example
     file: my-concourse-ci-tasks/ls-example/ci/tasks/task-ls-example.yml
 
 resources:
 
-- name: my-cheat-sheets
+- name: my-concourse-ci-tasks
   type: git
   source:
-    #uri: https://github.com/jeffdecola/my-cheat-sheets
     uri: git@github.com:jeffdecola/my-concourse-ci-tasks.git
     branch: master
     private_key: {{git_private_key}}
