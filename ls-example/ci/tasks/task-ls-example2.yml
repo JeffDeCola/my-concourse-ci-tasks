@@ -12,7 +12,7 @@ inputs:
 - name: my-concourse-ci-tasks
 
 outputs:
-- name: result
+- name: result2
 
 run:
   path: ./my-concourse-ci-tasks/ls-example/ci/scripts/ls-example2.sh
