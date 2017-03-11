@@ -7,7 +7,7 @@ jobs:
   - get: my-cheat-sheets
     trigger: true
   - task: task-ls-example
-    file: mmy-concourse-ci-tasks/ls-example/ci/tasks/task-ls-example.yml
+    file: my-concourse-ci-tasks/ls-example/ci/tasks/task-ls-example.yml
 
 resources:
 
