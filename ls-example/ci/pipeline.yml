@@ -12,7 +12,7 @@ jobs:
       do:
       - put: my-concourse-ci-tasks
         params:
-          repository: my-concourse-ci-task
+          repository: my-concourse-ci-tasks
 
 - name: job-ls-example2
   plan:
