@@ -8,9 +8,11 @@ jobs:
     trigger: true
   - task: task-ls-example
     file: my-concourse-ci-tasks/ls-example/ci/tasks/task-ls-example.yml
-
-
-jobs:
+    on_success:
+      do:
+      - put: my-concourse-ci-tasks
+        params:
+          repository: my-concourse-ci-task
 
 - name: job-ls-example2
   plan:
