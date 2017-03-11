@@ -8,6 +8,14 @@ ls -lat
 
 cd my-concourse-ci-tasks
 
-touch boo.txt
+echo "hi jeff" > boo.txt
+
+ls -lat
+
+cd ..
+
+cd result
+
+echo "hi jeff" > blah.txt
 
 ls -lat
