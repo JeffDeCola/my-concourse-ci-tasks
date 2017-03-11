@@ -9,6 +9,17 @@ jobs:
   - task: task-ls-example
     file: my-concourse-ci-tasks/ls-example/ci/tasks/task-ls-example.yml
 
+
+jobs:
+
+- name: job-ls-example2
+  plan:
+  - get: my-concourse-ci-tasks
+    trigger: true
+    passed: [job-ls-example]
+  - task: task-ls-example2
+    file: my-concourse-ci-tasks/ls-example/ci/tasks/task-ls-example2.yml
+
 resources:
 
 - name: my-concourse-ci-tasks
