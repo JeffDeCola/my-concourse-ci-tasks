@@ -11,8 +11,5 @@ image_resource:
 inputs:
 - name: my-concourse-ci-tasks
 
-outputs:
-- name: result
-
 run:
   path: ./my-concourse-ci-tasks/ls-example/ci/scripts/ls-example.sh
