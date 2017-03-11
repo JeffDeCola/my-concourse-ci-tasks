@@ -15,6 +15,8 @@ This `pipeline.yml` shall contain:
         * RESOURCE - git my-cheat-sheet
         * TASK - `ls-examples.sh` and `task-ls-example.yml`
 
+![IMAGE - concourse ci ls-example - IMAGE](../docs/pics/concourse-ci-ls-example.jpg)
+
 ### 1. ci/`pipeline.yml`
 
 ```bash
