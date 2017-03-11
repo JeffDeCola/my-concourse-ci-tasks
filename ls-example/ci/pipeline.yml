@@ -8,15 +8,6 @@ jobs:
     trigger: true
   - task: task-seach-and-replace
     file: my-cheat-sheets/concourse-cheat-sheet/ci/tasks/task-search-and-replace.yml
-    #on_success:
-    #  do:
-    #  - put: my-cheat-sheets
-    #    params:
-    #      repository: my-cheat-sheets-updated  
-    #on_failure:
-    #  do:
-    #  - put: resource-repo-status
-    #    params: { state: "failure", description: "FAILED job-seach-and-replace in concourse ci", commit: "my-cheat-sheets" }
 
 resources:
 
@@ -27,4 +18,3 @@ resources:
     uri: git@github.com:jeffdecola/my-cheat-sheets.git
     branch: master
     private_key: {{git_private_key}}
-
