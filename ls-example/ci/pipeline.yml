@@ -1,13 +1,13 @@
-# search-and-replace pipeline.yml
+# ls-example pipeline.yml
 
 jobs:
 
-- name: job-seach-and-replace
+- name: job-ls-example
   plan:
   - get: my-cheat-sheets
     trigger: true
-  - task: task-seach-and-replace
-    file: my-cheat-sheets/concourse-cheat-sheet/ci/tasks/task-search-and-replace.yml
+  - task: task-ls-example
+    file: mmy-concourse-ci-tasks/ls-example/ci/tasks/task-ls-example.yml
 
 resources:
 
@@ -15,6 +15,6 @@ resources:
   type: git
   source:
     #uri: https://github.com/jeffdecola/my-cheat-sheets
-    uri: git@github.com:jeffdecola/my-cheat-sheets.git
+    uri: git@github.com:jeffdecola/my-concourse-ci-tasks.git
     branch: master
     private_key: {{git_private_key}}
