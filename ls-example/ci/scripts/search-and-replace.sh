@@ -17,5 +17,3 @@ mv result.txt result
 cd result
 ls -lat
 pwd
-
-

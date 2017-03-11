@@ -16,4 +16,3 @@ outputs:
 
 run:
   path: ./my-cheat-sheets/concourse-cheat-sheet/ci/scripts/search-and-replace.sh
-
