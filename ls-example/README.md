@@ -44,9 +44,9 @@ This picture may help better illustrate how everything fits together.
 
 4. Upload the `pipeline.yml` to your Concourse CI server.
 
-```bash
-fly -t ci set-pipeline -p ls-example -c ci/pipeline.yml --load-vars-from ci/.credentials.yml
-```
+   ```bash
+   fly -t ci set-pipeline -p ls-example -c ci/pipeline.yml --load-vars-from ci/.credentials.yml
+   ```
 
 5. Start the pipeline on your Concourse CI by pressing play.
 
