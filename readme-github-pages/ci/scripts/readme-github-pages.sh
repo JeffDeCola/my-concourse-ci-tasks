@@ -24,7 +24,7 @@ sed -i '0,/##/{s/##/#/}' temp-README.md
 # update the image links (remove docs/)
 sed -i 's#IMAGE](docs/#IMAGE](#g' temp-README.md
 
-commit="yes"
+commit="yes"sh unforseen
 
 # CHECK IF THE FILE EXISTS
 if (test -f docs/_includes/README.md)
