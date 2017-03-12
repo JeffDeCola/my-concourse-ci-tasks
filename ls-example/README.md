@@ -19,7 +19,7 @@ of that Repo on your Concourse CI server.
 
 It is assumed you already have a Concourse CI server running.
 
-## THE PIPELINE
+## THE PIPELINE FILES
 
 The `pipeline.yml` file contains:
 
@@ -50,6 +50,12 @@ This picture may help better illustrate how everything fits together.
    ```
 
 5. Start the pipeline on your Concourse CI by pressing play.
+
+## THE PIPELINE
+
+Concourse CI shall look like,
+
+![IMAGE - ls-example concourse ci piepline - IMAGE](../docs/pics/ls-example-pipeline.jpg)
 
 Now everytime you commit to your Repo Concourse CI will run this task.
 
