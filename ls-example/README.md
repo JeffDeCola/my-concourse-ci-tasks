@@ -31,7 +31,7 @@ the bash script (`ls-example.sh`) to perform the task (`ls -Rlat`).
 
 This picture may help better illustrate how everything fits together.
 
-![IMAGE - concourse ci ls-example - IMAGE](https://github.com/JeffDeCola/my-cheat-sheets/blob/master/docs/pics/Concourse-structure.jpg)
+![IMAGE - concourse ci ls-example - IMAGE](../docs/pics/ls-example-concourse-structure.jpg)
 
 ## TO CONFIGURE AND USE
 
