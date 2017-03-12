@@ -1,9 +1,9 @@
 #!/bin/bash
-# my-concourse-ci-tasks readme-github-pages.sh
+# readme-github-pages readme-github-pages.sh
 
 set -e -x
 
-# The code is located in /my-concourse-ci-tasks
+# The code is located in /my-concourse-ci-tasks/readme-github-pages
 echo "pwd is: " $PWD
 echo "List whats in the current directory"
 ls -lat 
