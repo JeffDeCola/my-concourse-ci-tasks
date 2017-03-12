@@ -12,17 +12,28 @@ Concourse's main goal is to run tasks. So lets do that.
 
 This task updates your GitHub webpage with the README.md from you main page.
 
-## GITHUB WEBPAGE UPDATED USING CONCOURSE
+## TO CONFIGURE AND USE
 
-A Concourse CI Pipeline will automatically update the GitHub WebPage.
+1. Clone this Repo or create your own Repo and copy the files.
 
-![IMAGE - my-concourse-ci-tasks concourse ci piepline - IMAGE](../docs/pics/my-concourse-ci-tasks-pipeline.jpg)
+2. Update the `pipeline.yml` file to point to the proper directory in your
+   Repo and where you store your `task-readme-github-pages.yml` file.
 
-A _ci/.credentials.yml_ file needs to be created for your _slack_url_ and _repo_github_token_.
+3. Create a `.credentials.yml` file to keep you github token and
+   remember to update your `.gitignore` file.
 
-Use fly to upload the the pipeline file _ci/pipline.yml_ to Concourse:
+4. Upload the `pipeline.yml` to your Concourse CI server.
 
-```bash
-fly -t ci set-pipeline -p my-concourse-ci-tasks -c ci/pipeline.yml --load-vars-from ci/.credentials.yml
-```
+   ```bash
+   fly -t ci set-pipeline -p readme-github-pages -c ci/pipeline.yml --load-vars-from ci/.credentials.yml
+   ```
 
+5. Start the pipeline on your Concourse CI by pressing play.
+
+## THE PIPELINE
+
+Concourse CI shall look like,
+
+![IMAGE - readme-github-pages concourse ci piepline - IMAGE](../docs/pics/readme-github-pages-pipeline.jpg)
+
+Now everytime you commit to your Repo Concourse CI will run this task.
