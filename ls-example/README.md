@@ -6,6 +6,7 @@ Concourse's main goal is to run tasks. So lets do that.
 using concourse._
 
 [GitHub Webpage](https://jeffdecola.github.io/my-concourse-ci-tasks/)
+
 [My notes on how to install Concourse CI](https://github.com/JeffDeCola/my-cheat-sheets/tree/master/concourse-ci-cheat-sheet)
 
 ## FUNCTIONALITY
@@ -13,7 +14,7 @@ using concourse._
 The purpose of this example is to give you a bare bones example
 on how to use Concourse CI.
 
-This example will grab a repo from github and list (`ls -Rlat`) the contents
+This example will grab a repo from GitHub and list (`ls -Rlat`) the contents
 of that Repo on your Concourse CI server.
 
 It is assumed you already have a Concourse CI server running.
