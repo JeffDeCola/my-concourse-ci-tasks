@@ -1,0 +1,15 @@
+# readme-github-pages task-readme-github-pages.yml
+
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: golang
+    tag: 1.7.1
+
+inputs:
+- name: my-concourse-ci-tasks
+
+run:
+  path: ./my-concourse-ci-tasks/readme-github-pages/ci/scripts/readme-github-pages.sh
