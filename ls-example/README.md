@@ -37,19 +37,19 @@ This picture may help better illustrate how everything fits together.
 
 1. Clone this Repo or create your own Repo and copy the files.
 
-2. Update the `pipeline.yml` file to point to the proper directory in your
+1. Update the `pipeline.yml` file to point to the proper directory in your
    Repo and where you store your `task-ls.example.yml` file.
 
-3. Create a `.credentials.yml` file to keep you github token and
+1. Create a `.credentials.yml` file to keep you github token and
    remember to update your `.gitignore` file.
 
-4. Upload the `pipeline.yml` to your Concourse CI server.
+1. Upload the `pipeline.yml` to your Concourse CI server.
 
    ```bash
    fly -t ci set-pipeline -p ls-example -c ci/pipeline.yml --load-vars-from ci/.credentials.yml
    ```
 
-5. Start the pipeline on your Concourse CI by pressing play.
+1. Start the pipeline on your Concourse CI by pressing play.
 
 ## THE PIPELINE
 
