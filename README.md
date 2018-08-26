@@ -10,7 +10,7 @@ Concourse's main goal is to run tasks.
 
 [GitHub Webpage](https://jeffdecola.github.io/my-concourse-ci-tasks/)
 
-## CONCOURSE TASKS
+## CONCOURSE TASKS EXAMPLE
 
 * [ls-example](https://github.com/JeffDeCola/my-concourse-ci-tasks/tree/master/ls-example)
 
