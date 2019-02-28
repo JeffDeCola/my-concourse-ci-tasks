@@ -1,6 +1,6 @@
 # my-concourse-ci-tasks
 
-[![Code Climate](https://codeclimate.com/github/JeffDeCola/my-concourse-ci-tasks/badges/gpa.svg)](https://codeclimate.com/github/JeffDeCola/my-concourse-ci-tasks)
+[![Maintainability](https://api.codeclimate.com/v1/badges/552c610302f7001c3150/maintainability)](https://codeclimate.com/github/JeffDeCola/my-concourse-ci-tasks/maintainability)
 [![Issue Count](https://codeclimate.com/github/JeffDeCola/my-concourse-ci-tasks/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-concourse-ci-tasks/issues)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
