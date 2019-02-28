@@ -4,7 +4,7 @@
 set -e -x
 
 # The code is located in /my-concourse-ci-tasks/readme-github-pages
-echo "pwd is: " $PWD
+echo "pwd is:" $PWD
 echo "List whats in the current directory"
 ls -lat 
 
