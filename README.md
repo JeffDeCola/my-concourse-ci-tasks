@@ -4,7 +4,8 @@
 [![Issue Count](https://codeclimate.com/github/JeffDeCola/my-concourse-ci-tasks/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-concourse-ci-tasks/issues)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
-`my-concourse-ci-tasks` _is a place to keep snippets and examples of Concourse CI tasks.
+`my-concourse-ci-tasks` _is a place to keep snippets and examples of Concourse
+CI tasks.
 
 Concourse's main goal is to run tasks.
 

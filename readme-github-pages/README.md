@@ -12,7 +12,7 @@ Concourse's main goal is to run tasks. So lets do that.
 
 This task updates your GitHub webpage with the README.md from your main page.
 
-This taks is updating this repos [GitHub Webpage](https://jeffdecola.github.io/my-concourse-ci-tasks/).
+This task is updating this repos [GitHub Webpage](https://jeffdecola.github.io/my-concourse-ci-tasks/).
 
 ## THE PIPELINE FILES
 
@@ -50,6 +50,6 @@ This picture may help better illustrate how everything fits together.
 
 Concourse CI shall look like,
 
-![IMAGE - readme-github-pages concourse ci piepline - IMAGE](../docs/pics/readme-github-pages-pipeline.jpg)
+![IMAGE - readme-github-pages concourse ci pipeline - IMAGE](../docs/pics/readme-github-pages-pipeline.jpg)
 
-Now everytime you commit to your Repo Concourse CI will run this task.
+Now every time you commit to your Repo Concourse CI will run this task.
