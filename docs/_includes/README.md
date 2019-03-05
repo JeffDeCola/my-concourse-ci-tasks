@@ -7,4 +7,4 @@
 
 * [readme-github-pages](https://github.com/JeffDeCola/my-concourse-ci-tasks/tree/master/readme-github-pages)
 
-   _Takes your main README.md, edits and copies it to docs/_includes/README.md._
+   _Takes your main README.md, edits and copies it to docs/\_includes/README.md._
