@@ -9,7 +9,7 @@ CI tasks.
 
 Concourse's main goal is to run tasks.
 
-[GitHub Webpage](https://jeffdecola.github.io/my-concourse-ci-tasks/)
+View my entire list of concourse tasks on [my GitHub Webpage](https://jeffdecola.github.io/my-concourse-ci-tasks/)
 
 ## CONCOURSE TASKS EXAMPLE
 
