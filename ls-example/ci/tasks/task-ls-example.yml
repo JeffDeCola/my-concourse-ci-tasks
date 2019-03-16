@@ -13,3 +13,4 @@ inputs:
 
 run:
   path: ./my-concourse-ci-tasks/ls-example/ci/scripts/ls-example.sh
+  # args: [-debug]
