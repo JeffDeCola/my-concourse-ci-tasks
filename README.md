@@ -11,7 +11,7 @@ Concourse's main goal is to run tasks.
 
 View my entire list of concourse tasks on [my GitHub Webpage](https://jeffdecola.github.io/my-concourse-ci-tasks/)
 
-## CONCOURSE TASKS EXAMPLE
+## CONCOURSE TASK EXAMPLES
 
 * [ls-example](https://github.com/JeffDeCola/my-concourse-ci-tasks/tree/master/ls-example)
 

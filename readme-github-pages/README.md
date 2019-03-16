@@ -41,7 +41,8 @@ This picture may help better illustrate how everything fits together.
 1. Upload the `pipeline.yml` to your Concourse CI server.
 
    ```bash
-   fly -t ci set-pipeline -p readme-github-pages -c ci/pipeline.yml --load-vars-from ci/.credentials.yml
+   fly -t ci set-pipeline -p readme-github-pages -c ci/pipeline.yml \
+   --load-vars-from ci/.credentials.yml
    ```
 
 1. Start the pipeline on your Concourse CI by pressing play.
