@@ -9,7 +9,7 @@ CI tasks._
 
 [GitHub Webpage](https://jeffdecola.github.io/my-concourse-ci-tasks/)
 _built with
-[concourse ci](https://github.com/JeffDeColamy-concourse-ci-tasks/blob/master/ci-README.md)_
+[concourse ci](https://github.com/JeffDeCola/my-concourse-ci-tasks/blob/master/ci-README.md)_
 
 ## CONCOURSE TASK EXAMPLES
 
