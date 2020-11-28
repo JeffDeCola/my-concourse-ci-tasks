@@ -4,14 +4,16 @@
 [![Issue Count](https://codeclimate.com/github/JeffDeCola/my-concourse-ci-tasks/badges/issue_count.svg)](https://codeclimate.com/github/JeffDeCola/my-concourse-ci-tasks/issues)
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://jeffdecola.mit-license.org)
 
-`my-concourse-ci-tasks` _is a place to keep snippets and examples of Concourse
-CI tasks.
+_A place to keep snippets and examples of Concourse
+CI tasks._
 
-Concourse's main goal is to run tasks.
-
-View my entire list of concourse tasks on [my GitHub Webpage](https://jeffdecola.github.io/my-concourse-ci-tasks/)
+[GitHub Webpage](https://jeffdecola.github.io/my-concourse-ci-tasks/)
+_built with
+[concourse ci](https://github.com/JeffDeColamy-concourse-ci-tasks/blob/master/ci-README.md)_
 
 ## CONCOURSE TASK EXAMPLES
+
+_Concourse's main goal is to run tasks._
 
 * [ls-example](https://github.com/JeffDeCola/my-concourse-ci-tasks/tree/master/ls-example)
 
