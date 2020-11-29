@@ -10,7 +10,7 @@ For fun, I use concourse ci to,
 ## PIPELINE
 
 The concourse
-[pipeline.yml](https://github.com/JeffDeCola/my-concourse-ci-tasks/blob/master/ci/pipeline.yml)
+[pipeline.yml](https://github.com/JeffDeCola/my-concourse-ci-tasks/blob/master/readme-github-pages/ci/pipeline.yml)
 shows the entire ci flow. Visually, it looks like,
 
 ![IMAGE - my-concourse-ci-tasks concourse ci pipeline - IMAGE](docs/pics/my-concourse-ci-tasks-pipeline.jpg)
@@ -20,9 +20,9 @@ shows the entire ci flow. Visually, it looks like,
 The concourse `jobs` and `tasks` are,
 
 * `job-readme-github-pages` runs task
-  [task-readme-github-pages.yml](https://github.com/JeffDeCola/my-concourse-ci-tasks/blob/master/ci/tasks/task-readme-github-pages.yml)
+  [task-readme-github-pages.yml](https://github.com/JeffDeCola/my-concourse-ci-tasks/blob/master/readme-github-pages/ci/tasks/task-readme-github-pages.yml)
   that kicks off shell script
-  [readme-github-pages.sh](https://github.com/JeffDeCola/my-concourse-ci-tasks/blob/master/ci/scripts/readme-github-pages.sh)
+  [readme-github-pages.sh](https://github.com/JeffDeCola/my-concourse-ci-tasks/blob/master/readme-github-pages/ci/scripts/readme-github-pages.sh)
 
 The concourse `resources types` are,
 
