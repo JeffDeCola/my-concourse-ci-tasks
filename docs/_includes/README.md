@@ -1,5 +1,9 @@
+_built with
+[concourse ci](https://github.com/JeffDeCola/my-concourse-ci-tasks/blob/master/ci-README.md)_
 
 # CONCOURSE TASK EXAMPLES
+
+_Concourse's main goal is to run tasks._
 
 * [ls-example](https://github.com/JeffDeCola/my-concourse-ci-tasks/tree/master/ls-example)
 
