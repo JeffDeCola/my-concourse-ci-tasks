@@ -20,7 +20,7 @@ fi
 echo "GOAL ----------------------------------------------------------------------------------"
 echo " "
 
-echo "The goal is to git clone /readme-github-pages to /readme-github-pages-updated"
+echo "The goal is to git clone /my-concourse-ci-tasks to /my-concourse-ci-tasks-updated"
 echo "Then script will edit the /docs/_includes/README.md for GITHUB WEBPAGES"
 echo "Finally push the changes in /docs/_includes/README.md to github"
 echo " "
@@ -29,8 +29,8 @@ echo "CHECK THINGS -------------------------------------------------------------
 echo " "
 
 echo "At start, you should be in a /tmp/build/xxxxx directory with two folders:"
-echo "   /readme-github-pages"
-echo "   /readme-github-pages-updated (created in task-build-push.yml task file)"
+echo "   /my-concourse-ci-tasks"
+echo "   /my-concourse-ci-tasks-updated (created in task-build-push.yml task file)"
 echo " "
 
 echo "pwd is: $PWD"
@@ -43,12 +43,12 @@ echo " "
 echo "GIT CLONE -----------------------------------------------------------------------------"
 echo " "
 
-echo "git clone readme-github-pages to readme-github-pages-updated"
-git clone readme-github-pages readme-github-pages-updated
+echo "git clone my-concourse-ci-tasks to my-concourse-ci-tasks-updated"
+git clone my-concourse-ci-tasks my-concourse-ci-tasks-updated
 echo " "
 
-echo "cd readme-github-pages-updated"
-cd readme-github-pages-updated
+echo "cd my-concourse-ci-tasks-updated"
+cd my-concourse-ci-tasks-updated
 echo " "
 
 echo "List whats in the current directory"
@@ -70,8 +70,8 @@ echo "    sed -i 's#IMAGE](docs/#IMAGE](#g' temp-README.md"
 sed -i 's#IMAGE](docs/#IMAGE](#g' temp-README.md
 echo "    Update the image links for svgs (if you have them)"
 echo "    Add \"https://raw.githubusercontent.com/JeffDeCola/REPONAME/master/svgs/\" to \"svgs/\""
-echo "    sed -i 's/svgs\//https:\/\/raw.githubusercontent.com\/JeffDeCola\/readme-github-pages\/master\/svgs\//g' temp-README.md"
-sed -i 's/svgs\//https:\/\/raw.githubusercontent.com\/JeffDeCola\/readme-github-pages\/master\/svgs\//g' temp-README.md
+echo "    sed -i 's/svgs\//https:\/\/raw.githubusercontent.com\/JeffDeCola\/my-concourse-ci-tasks\/master\/svgs\//g' temp-README.md"
+sed -i 's/svgs\//https:\/\/raw.githubusercontent.com\/JeffDeCola\/my-concourse-ci-tasks\/master\/svgs\//g' temp-README.md
 echo " "
 
 echo "GIT COMMIT OR NOT ---------------------------------------------------------------------"
